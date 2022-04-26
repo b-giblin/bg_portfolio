@@ -195,9 +195,8 @@ body.light-theme {
 }
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-  max-width: 1140px;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
 }
 
 .grid {
@@ -1039,10 +1038,9 @@ body.light-theme {
 }
 
 /* For large devices */
-@media screen and (min-width: 1140px){
+@media screen and (min-width: 992px){
   .container {
-    margin-left: auto;
-    margin-right: auto;
+
   }
 
   .section {
