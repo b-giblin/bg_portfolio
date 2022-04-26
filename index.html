@@ -36,7 +36,7 @@
             </li>
 
             <li class="nav__item">
-              <a href="#user" class="nav__link">
+              <a href="#about" class="nav__link">
                 <i class="bx bx-user"></i>
               </a>
             </li>
@@ -93,14 +93,23 @@
           <div class="home__social">
             <a
               href="https://www.linkedin.com/in/brian-giblin-86549b238/"
+              target="_blank"
               class="home__social-link"
             >
               <i class="bx bxl-linkedin-square"></i>
             </a>
-            <a href="https://github.com/b-giblin" class="home__social-link">
+            <a
+              href="https://github.com/b-giblin"
+              target="_blank"
+              class="home__social-link"
+            >
               <i class="bx bxl-github"></i>
             </a>
-            <a href="https://dribbble.com/bgibs" class="home__social-link">
+            <a
+              href="https://dribbble.com/bgibs"
+              target="_blank"
+              class="home__social-link"
+            >
               <i class="bx bxl-dribbble"></i>
             </a>
           </div>
@@ -527,8 +536,40 @@
                 <i class="bx bx-mail-send contact__card-icon"></i>
                 <h3 class="contact__card-title">Email</h3>
                 <span class="contact__card-data">bgiblin893@gmail.com</span>
+                <a
+                  href="mailto:bgiblin893@gmail.com"
+                  target="blank"
+                  class="contact__button"
+                >
+                  Write Me
+                  <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                </a>
+              </div>
 
-                <a href="" target="blank" class="contact__button">
+              <div class="contact__card">
+                <i class="bx bx-message-rounded-dots contact__card-icon"></i>
+                <h3 class="contact__card-title">whatsApp</h3>
+                <span class="contact__card-data">203-610-2300</span>
+
+                <a
+                  href="https://api.whatsapp.com/send?phone=12036102300&text=Hey!%20Thanks%20for%20contacting%20my%20web%20developement%20business%20on%20WhatsApp.%20Questions%20about%20a%20project%20or%20service?%20Feel%20free%20to%20ask%20them%20here%20and%20I%20will%20get%20back%20to%20you%20shortly."
+                  target="blank"
+                  class="contact__button"
+                >
+                  Write Me
+                  <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                </a>
+              </div>
+              <div class="contact__card">
+                <i class="bx bxl-messenger contact__card-icon"></i>
+                <h3 class="contact__card-title">Messenger</h3>
+                <span class="contact__card-data">brian.giblin.5</span>
+
+                <a
+                  href="https://m.me/brian.giblin.5"
+                  target="blank"
+                  class="contact__button"
+                >
                   Write Me
                   <i class="bx bx-right-arrow-alt contact__button-icon"></i>
                 </a>
@@ -537,14 +578,92 @@
           </div>
 
           <div class="contact__content">
-            <h3 class="contact_title">Questions? Send Me Your Ideas</h3>
+            <h3 class="contact__title">Send me your project</h3>
+
+            <form action="" class="contact__form">
+              <div class="contact__form-div">
+                <label for="" class="contact__form-tag">Names</label>
+                <input
+                  type="text"
+                  placeholder="Insert your name"
+                  class="contact__form-input"
+                />
+              </div>
+
+              <div class="contact__form-div">
+                <label for="" class="contact__form-tag">Mail</label>
+                <input
+                  type="email"
+                  placeholder="Insert your email"
+                  class="contact__form-input"
+                />
+              </div>
+
+              <div class="contact__form-div contact__form-area">
+                <label for="" class="contact__form-tag">Project</label>
+                <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="Write your project"
+                  class="contact__form-input"
+                ></textarea>
+              </div>
+
+              <button class="button">Send Message</button>
+            </form>
           </div>
         </div>
       </section>
     </main>
 
     <!--=============== FOOTER ===============-->
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__container container">
+        <h1 class="footer__title">Brian</h1>
+
+        <ul class="footer__list">
+          <li>
+            <a href="#about" class="foor__link">About</a>
+          </li>
+          <li>
+            <a href="#work" class="foor__link">Projects</a>
+          </li>
+          <li>
+            <a href="#testimonial" class="foor__link">Testimonial</a>
+          </li>
+        </ul>
+
+        <ul class="footer__social">
+          <a
+            href="https://www.facebook.com/brian.giblin.5/"
+            target="blank"
+            class="footer__social-link"
+          >
+            <i class="bx bxl-facebook"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/bpgdev/"
+            target="blank"
+            class="footer__social-link"
+          >
+            <i class="bx bxl-instagram"></i>
+          </a>
+          <a
+            href="https://twitter.com/BPGWebDev"
+            target="blank"
+            class="footer__social-link"
+          >
+            <i class="bx bxl-twitter"></i>
+          </a>
+        </ul>
+
+        <span class="footer__copy">
+          &#169; Brian Giblin. All rights reserved
+        </span>
+      </div>
+    </footer>
 
     <!--=============== SCROLLREVEAL ===============-->
     <script src=""></script>
