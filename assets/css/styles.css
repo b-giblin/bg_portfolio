@@ -949,7 +949,8 @@ body.light-theme {
   }
 
   .about__info {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
   }
 
   .skills__box {
@@ -961,9 +962,22 @@ body.light-theme {
   }
 
   .services__container{
-    grid-template-columns: 145px;
+    grid-template-columns: 1fr;
     justify-content: center;
     gap: 1.25rem;
+    text-align: center;
+  }
+
+  .services__button {
+    justify-content: center;
+  }
+
+  .services__card {
+    padding: 1rem;
+  }
+
+  .services__title {
+    margin-bottom: .75rem;
   }
 
   .work__item {
@@ -973,9 +987,19 @@ body.light-theme {
   .work__filters{
     column-gap: .25rem;
   }
+
+  .testimonial__card {
+    text-align: center;
+  }
+
 }
 /* For medium devices */
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 26.063em) {
+  .container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  
   .nav__menu {
     width: 328px;
     left: 0;
