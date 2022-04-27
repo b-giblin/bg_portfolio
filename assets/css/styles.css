@@ -194,10 +194,6 @@ body.light-theme {
   background-color: hsl(var(--second-hue), 8%, 44%);
 }
 /*=============== REUSABLE CSS CLASSES ===============*/
-.container {
-  margin-left: 4rem;
-  margin-right: 4rem;
-}
 
 .grid {
   display: grid;
@@ -924,7 +920,69 @@ body.light-theme {
 }
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 377px) {
+  .container {
+    margin-left: .8rem;
+    margin-right: .8rem;
+  }
+  
+  .home__container {
+    row-gap: 1.3rem;
+  }
+
+  .nav__menu {
+    padding: 1rem 1.5rem;
+  }
+
+  .home__buttons {
+    flex-direction: column;
+  }
+
+  .home__handle {
+    width: 150px;
+    height: 253px;
+  }
+
+  .home__img {
+    width: 130px;
+  }
+
+  .about__info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skills__box {
+    column-gap: 1rem;
+  }
+
+  .skills__name {
+    font-size: var(--small-font-size);
+  }
+
+  .services__container{
+    grid-template-columns: 145px;
+    justify-content: center;
+  }
+
+  .work__item {
+    font-size: var(--small-font-size);
+  }
+
+  .work__filters{
+    column-gap: .25rem;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .container {
+    margin-left: .8rem;
+    margin-right: .8rem;
+  }
+  
+  .home__container {
+    row-gap: 3rem;
+  }
+
   .nav__menu {
     padding: 1rem 1.5rem;
   }
@@ -1040,7 +1098,8 @@ body.light-theme {
 /* For large devices */
 @media screen and (min-width: 992px){
   .container {
-
+    margin-left: 4rem;
+    margin-right: 4rem;
   }
 
   .section {
